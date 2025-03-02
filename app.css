@@ -1,0 +1,283 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* App Container */
+.app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Header Styling */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 15px 30px;
+    background: linear-gradient(45deg, #ff4b2b, #ff416c);
+    color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 0px;
+}
+
+/* Logo Styling */
+.logo img {
+    width: 80px;
+    height: auto;
+    border-radius: 10px;
+    border: 2px solid white;
+    padding: 5px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.logo img:hover {
+    transform: scale(1.1);
+}
+
+/* Navigation Bar */
+.nav-items ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-items li {
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out, transform 0.2s;
+}
+
+.nav-items li:hover {
+    background: white;
+    color: #ff416c;
+    transform: translateY(-2px);
+}
+
+/* Body Container */
+.body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+}
+
+/* Search Bar */
+.search {
+    width: 60%;
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    background: white;
+    border: 2px solid #ff416c;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.search:hover {
+    background: #ff416c;
+    color: white;
+}
+
+/* Restaurant Container */
+.res-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Restaurant Card */
+.res-card {
+    width: 280px;
+    padding: 15px;
+    background: linear-gradient(135deg, #ff4b2b, #ff416c);
+    color: white;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+    text-align: center;
+}
+
+.res-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Restaurant Logo */
+.res-logo {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 3px solid white;
+    transition: transform 0.3s ease-in-out;
+}
+
+.res-logo:hover {
+    transform: scale(1.05);
+}
+
+/* Restaurant Details */
+.res-card h3 {
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.res-card h4 {
+    font-size: 16px;
+    margin-top: 5px;
+    font-weight: normal;
+    opacity: 0.9;
+}
+ 
+.btn {
+  margin-left: 10px;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background-color: #e61e10; /* Green color for positive ratings */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+  background-color: #218838; /* Darker green on hover */
+}
+
+.btn:active {
+  background-color: #1e7e34;
+  transform: scale(0.95);
+}
+
+
+
+
+.shimmer-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .shimmer-card {
+    width: 240px;
+    height: 320px;
+    background: #f0f0f0;
+    border-radius: 12px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .shimmer-img {
+    width: 100%;
+    height: 140px;
+    background: linear-gradient(90deg, #e0e0e0 25%, #f0f0f0 50%, #e0e0e0 75%);
+    background-size: 200% 100%;
+    border-radius: 8px;
+    animation: shimmer 1.5s infinite linear;
+  }
+  
+  .shimmer-line {
+    height: 12px;
+    background: linear-gradient(90deg, #e0e0e0 25%, #f0f0f0 50%, #e0e0e0 75%);
+    background-size: 200% 100%;
+    border-radius: 6px;
+    animation: shimmer 1.5s infinite linear;
+    margin-top: 12px;
+  }
+  
+  .shimmer-title {
+    width: 60%;
+    height: 16px;
+  }
+  
+  .shimmer-subtitle {
+    width: 40%;
+  }
+  
+  .shimmer-details {
+    width: 80%;
+  }
+  
+  .shimmer-price {
+    width: 30%;
+  }
+  
+  @keyframes shimmer {
+    0% {
+      background-position: -200% 0;
+    }
+    100% {
+      background-position: 200% 0;
+    }
+  }
+  
+
+  .search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+  }
+  
+  .searchbar {
+    display: flex;
+    gap: 10px;
+    background: #f8f8f8;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .inputbar {
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    width: 250px;
+    transition: border-color 0.3s ease;
+  }
+  
+  .inputbar:focus {
+    border-color: #ff5733;
+  }
+  
+  .srchbtn {
+    padding: 12px 20px;
+    font-size: 16px;
+    border: none;
+    background-color: #ff5733;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .srchbtn:hover {
+    background-color: #e04e2a;
+  }
+  
+  .srchbtn:active {
+    background-color: #c8461d;
+    transform: scale(0.95);
+  }
+  
